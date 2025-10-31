@@ -55,6 +55,7 @@ struct applyMlSelection {
   int nCandidates = 0;
 
   // Add objects needed for ML inference
+  o2::analysis::MlResponse<float> mlResponse;  //Defining the class where are all the functions neede for model application
   std::vector<float> outputMl = {};
 
   // Add histograms for other BDT scores and for distributions after selections
@@ -71,10 +72,13 @@ struct applyMlSelection {
     registry.add("hPromptScoreAfterSelVsPt", "Prompt score after selection;BDT first score;entries", {HistType::kTH2F, {{100, 0., 1.}, {vbins, "#it{p}_{T} (GeV/#it{c})"}}});
 
     // Configure and initialise the ML class
+    mlResponse.configure(binsPtMl, cutsMl, cutDirMl, nClassesMl);
 
     // Bonus: retrieve the model from CCDB (needed for ML application on the GRID)
+    mlResponse.setModelPathsLocal(onnxFileNames);
+    mlResponse.init();
   }
-
+  
   void process(soa::Filtered<aod::HfCand3Prong> const& candidates)
   {
     // Looping over Ds candidates
@@ -111,12 +115,12 @@ struct applyMlSelection {
                                            candidate.maxNormalisedDeltaIP()};
 
       // Retrieve model output and selection outcome
+      bool isSelectedMlPiKK = mlResponse.isSelectedMl(inputFeaturesPiKK, candpT, outputMl);
 
       // Fill BDT score histograms before selection
       registry.fill(HIST("hPromptScoreBeforeSel"), outputMl[0]);
 
       // Fill histograms for selected candidates
-      bool isSelectedMlPiKK = true;
       if (isSelectedMlPiKK) {
         registry.fill(HIST("hMassAfterSelVsPt"), hfHelper.invMassDsToPiKK(candidate), candidate.pt());
         registry.fill(HIST("hPromptScoreAfterSelVsPt"), outputMl[0], candidate.pt());
@@ -135,10 +139,16 @@ struct applyMlSelection {
                                            candidate.maxNormalisedDeltaIP()};
 
       // Retrieve model output and selection outcome
+      bool isSelectedMlKKPi = mlResponse.isSelectedMl(inputFeaturesKKPi, candpT, outputMl);
 
       // Fill BDT score histograms before selection
+      registry.fill(HIST("hPromptScoreBeforeSel"), outputMl[0]);
 
       // Fill histograms for selected candidates
+        if (isSelectedMlKKPi) {
+          registry.fill(HIST("hMassAfterSelVsPt"), hfHelper.invMassDsToKKPi(candidate), candidate.pt());
+          registry.fill(HIST("hPromptScoreAfterSelVsPt"), outputMl[0], candidate.pt());
+        }
 
       outputMl.clear(); // not necessary in this case but for good measure
     }

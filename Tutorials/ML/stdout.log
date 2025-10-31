@@ -1,0 +1,390 @@
+[INFO] Initialising O2 Data Processing Layer. Driver PID: 22961.
+[INFO] Driver listening on port: 31041
+[INFO] Rate limiting set up at 2000 MB distributed over 1 readers
+[INFO] O2 Data Processing Layer initialised. We brake for nobody.
+[INFO] Optimised build. O2DEBUG / LOG(debug) / LOGF(debug) / assert statement will not be shown.
+[INFO] Redeployment of configuration asked.
+[INFO] Starting internal-dpl-clock on pid 22963
+[INFO] Starting internal-dpl-aod-reader on pid 22964
+[INFO] Starting internal-dpl-aod-spawner on pid 22965
+[INFO] Starting internal-dpl-aod-index-builder on pid 22966
+[INFO] Starting timestamp-task on pid 22967
+[INFO] Starting track-propagation on pid 22968
+[INFO] Starting bc-selection-task on pid 22969
+[INFO] Starting event-selection-task on pid 22970
+[INFO] Starting track-selection on pid 22971
+[INFO] Starting lumi-task on pid 22972
+[INFO] Starting hf-track-index-skim-creator-tag-sel-collisions on pid 22973
+[INFO] Starting track-to-collision-association on pid 22974
+[INFO] Starting hf-track-index-skim-creator-tag-sel-tracks on pid 22975
+[INFO] Starting hf-track-index-skim-creator on pid 22976
+[INFO] Starting hf-track-index-skim-creator-lf-cascades on pid 22977
+[INFO] Starting hf-track-index-skim-creator-cascades on pid 22978
+[INFO] Starting hf-candidate-creator-3prong on pid 22979
+[INFO] Starting hf-candidate-creator-3prong-expressions on pid 22980
+[INFO] Starting apply-ml-selection on pid 22981
+[INFO] Starting internal-dpl-aod-writer on pid 22982
+[INFO] Starting internal-dpl-aod-global-analysis-file-sink on pid 22983
+[INFO] Starting internal-dpl-injected-dummy-sink on pid 22984
+[INFO] Redeployment of configuration done.
+[22964:internal-dpl-aod-reader]: [INFO] Instrumenting crash signals
+[22967:timestamp-task]: [INFO] Instrumenting crash signals
+[22967:timestamp-task]: [INFO] Spawing new device timestamp-task in process with pid 22967
+[22967:timestamp-task]: [08:40:35][INFO] 
+[22967:timestamp-task]:       ______      _    _______  _________ 
+[22967:timestamp-task]:      / ____/___ _(_)_______   |/  /_  __ \    version 1.10.0
+[22967:timestamp-task]:     / /_  / __ `/ / ___/__  /|_/ /_  / / /    build RELWITHDEBINFO
+[22967:timestamp-task]:    / __/ / /_/ / / /    _  /  / / / /_/ /     https://github.com/FairRootGroup/FairMQ
+[22967:timestamp-task]:   /_/    \__,_/_/_/     /_/  /_/  \___\_\     LGPL-3.0  © 2012-2025 GSI
+[22967:timestamp-task]: 
+[22967:timestamp-task]: [08:40:35][STATE] Starting FairMQ state machine --> IDLE
+[22964:internal-dpl-aod-reader]: [INFO] Spawing new device internal-dpl-aod-reader in process with pid 22964
+[22964:internal-dpl-aod-reader]: [08:40:35][INFO] 
+[22964:internal-dpl-aod-reader]:       ______      _    _______  _________ 
+[22964:internal-dpl-aod-reader]:      / ____/___ _(_)_______   |/  /_  __ \    version 1.10.0
+[22964:internal-dpl-aod-reader]:     / /_  / __ `/ / ___/__  /|_/ /_  / / /    build RELWITHDEBINFO
+[22964:internal-dpl-aod-reader]:    / __/ / /_/ / / /    _  /  / / / /_/ /     https://github.com/FairRootGroup/FairMQ
+[22964:internal-dpl-aod-reader]:   /_/    \__,_/_/_/     /_/  /_/  \___\_\     LGPL-3.0  © 2012-2025 GSI
+[22964:internal-dpl-aod-reader]: 
+[22964:internal-dpl-aod-reader]: [08:40:35][STATE] Starting FairMQ state machine --> IDLE
+[22967:timestamp-task]: [08:40:35][STATE] IDLE ---> INITIALIZING DEVICE
+[22967:timestamp-task]: [08:40:35][INFO] Init CcdApi with UserAgentID: Karla-MacBook-Pro-3.local-1761201635-BlxHzZ, Host: http://alice-ccdb.cern.ch/, Curl timeouts: upload:20 download:5
+[22967:timestamp-task]: [08:40:35][INFO] Initializing TimestampTask
+[22967:timestamp-task]: [08:40:35][INFO] Init CcdApi with UserAgentID: Karla-MacBook-Pro-3.local-1761201635-BlxHzZ, Host: http://alice-ccdb.cern.ch, Curl timeouts: upload:20 download:5
+[22967:timestamp-task]: [08:40:35][INFO] Init CcdApi with UserAgentID: Karla-MacBook-Pro-3.local-1761201635-RtRtzn, Host: http://alice-ccdb.cern.ch, Curl timeouts: upload:20 download:5
+[22965:internal-dpl-aod-spawner]: [INFO] Instrumenting crash signals
+[22964:internal-dpl-aod-reader]: [08:40:35][STATE] IDLE ---> INITIALIZING DEVICE
+[22968:track-propagation]: [INFO] Instrumenting crash signals
+[22965:internal-dpl-aod-spawner]: [INFO] Spawing new device internal-dpl-aod-spawner in process with pid 22965
+[22970:event-selection-task]: [INFO] Instrumenting crash signals
+[22965:internal-dpl-aod-spawner]: [08:40:35][INFO] 
+[22965:internal-dpl-aod-spawner]:       ______      _    _______  _________ 
+[22965:internal-dpl-aod-spawner]:      / ____/___ _(_)_______   |/  /_  __ \    version 1.10.0
+[22965:internal-dpl-aod-spawner]:     / /_  / __ `/ / ___/__  /|_/ /_  / / /    build RELWITHDEBINFO
+[22965:internal-dpl-aod-spawner]:    / __/ / /_/ / / /    _  /  / / / /_/ /     https://github.com/FairRootGroup/FairMQ
+[22965:internal-dpl-aod-spawner]:   /_/    \__,_/_/_/     /_/  /_/  \___\_\     LGPL-3.0  © 2012-2025 GSI
+[22965:internal-dpl-aod-spawner]: 
+[22965:internal-dpl-aod-spawner]: [08:40:35][STATE] Starting FairMQ state machine --> IDLE
+[22968:track-propagation]: [INFO] Spawing new device track-propagation in process with pid 22968
+[22965:internal-dpl-aod-spawner]: [08:40:35][STATE] IDLE ---> INITIALIZING DEVICE
+[22968:track-propagation]: [08:40:35][INFO] 
+[22968:track-propagation]:       ______      _    _______  _________ 
+[22968:track-propagation]:      / ____/___ _(_)_______   |/  /_  __ \    version 1.10.0
+[22968:track-propagation]:     / /_  / __ `/ / ___/__  /|_/ /_  / / /    build RELWITHDEBINFO
+[22968:track-propagation]:    / __/ / /_/ / / /    _  /  / / / /_/ /     https://github.com/FairRootGroup/FairMQ
+[22968:track-propagation]:   /_/    \__,_/_/_/     /_/  /_/  \___\_\     LGPL-3.0  © 2012-2025 GSI
+[22968:track-propagation]: 
+[22968:track-propagation]: [08:40:35][STATE] Starting FairMQ state machine --> IDLE
+[22968:track-propagation]: [08:40:35][STATE] IDLE ---> INITIALIZING DEVICE
+[22971:track-selection]: [INFO] Instrumenting crash signals
+[22965:internal-dpl-aod-spawner]: [08:40:35][STATE] INITIALIZING DEVICE ---> INITIALIZED
+[22968:track-propagation]: [08:40:35][INFO] Init CcdApi with UserAgentID: Karla-MacBook-Pro-3.local-1761201635-ZvLo2g, Host: http://alice-ccdb.cern.ch/, Curl timeouts: upload:20 download:5
+[22968:track-propagation]: [08:40:35][INFO] Enabling processCovariance
+[22968:track-propagation]: [08:40:35][INFO] Init CcdApi with UserAgentID: Karla-MacBook-Pro-3.local-1761201635-ZvLo2g, Host: http://alice-ccdb.cern.ch, Curl timeouts: upload:20 download:5
+[22968:track-propagation]: [08:40:35][STATE] INITIALIZING DEVICE ---> INITIALIZED
+[22968:track-propagation]: [08:40:35][STATE] INITIALIZED ---> BINDING
+[22968:track-propagation]: [08:40:35][ERROR] Failed binding socket track-propagation.from_track-propagation_to_internal-dpl-aod-writer[0].push, address: ipc:///var/folders/zz/zyxvpxvq6csfxvn_n0000000000000/T/localhost22961_22017, reason: Permission denied
+[22968:track-propagation]: [08:40:35][ERROR] failed to attach channel from_track-propagation_to_internal-dpl-aod-writer[0] (bind on ipc:///var/folders/zz/zyxvpxvq6csfxvn_n0000000000000/T/localhost22961_22017)
+[22968:track-propagation]: [08:40:35][ERROR] Failed binding socket track-propagation.from_track-propagation_to_bc-selection-task[0].push, address: ipc:///var/folders/zz/zyxvpxvq6csfxvn_n0000000000000/T/localhost22961_22012, reason: Permission denied
+[22968:track-propagation]: [08:40:35][ERROR] failed to attach channel from_track-propagation_to_bc-selection-task[0] (bind on ipc:///var/folders/zz/zyxvpxvq6csfxvn_n0000000000000/T/localhost22961_22012)
+[22968:track-propagation]: [08:40:35][ERROR] Failed binding socket track-propagation.from_track-propagation_to_event-selection-task[0].push, address: ipc:///var/folders/zz/zyxvpxvq6csfxvn_n0000000000000/T/localhost22961_22013, reason: Permission denied
+[22968:track-propagation]: [08:40:35][ERROR] failed to attach channel from_track-propagation_to_event-selection-task[0] (bind on ipc:///var/folders/zz/zyxvpxvq6csfxvn_n0000000000000/T/localhost22961_22013)
+[22968:track-propagation]: [08:40:35][ERROR] Failed binding socket track-propagation.from_track-propagation_to_internal-dpl-aod-global-analysis-file-sink[0].push, address: ipc:///var/folders/zz/zyxvpxvq6csfxvn_n0000000000000/T/localhost22961_22016, reason: Permission denied
+[22968:track-propagation]: [08:40:35][ERROR] failed to attach channel from_track-propagation_to_internal-dpl-aod-global-analysis-file-sink[0] (bind on ipc:///var/folders/zz/zyxvpxvq6csfxvn_n0000000000000/T/localhost22961_22016)
+[22968:track-propagation]: [08:40:35][ERROR] Failed binding socket track-propagation.from_track-propagation_to_hf-track-index-skim-creator-tag-sel-tracks[0].push, address: ipc:///var/folders/zz/zyxvpxvq6csfxvn_n0000000000000/T/localhost22961_22015, reason: Permission denied
+[22968:track-propagation]: [08:40:35][ERROR] failed to attach channel from_track-propagation_to_hf-track-index-skim-creator-tag-sel-tracks[0] (bind on ipc:///var/folders/zz/zyxvpxvq6csfxvn_n0000000000000/T/localhost22961_22015)
+[22968:track-propagation]: [08:40:35][ERROR] Failed binding socket track-propagation.from_track-propagation_to_track-selection[0].push, address: ipc:///var/folders/zz/zyxvpxvq6csfxvn_n0000000000000/T/localhost22961_22014, reason: Permission denied
+[22968:track-propagation]: [08:40:35][ERROR] failed to attach channel from_track-propagation_to_track-selection[0] (bind on ipc:///var/folders/zz/zyxvpxvq6csfxvn_n0000000000000/T/localhost22961_22014)
+[22968:track-propagation]: [08:40:35][ERROR] 6 of the binding channels could not initialize. Initial configuration incomplete.
+[22971:track-selection]: [INFO] Spawing new device track-selection in process with pid 22971
+[22971:track-selection]: [08:40:35][INFO] 
+[22971:track-selection]:       ______      _    _______  _________ 
+[22971:track-selection]:      / ____/___ _(_)_______   |/  /_  __ \    version 1.10.0
+[22971:track-selection]:     / /_  / __ `/ / ___/__  /|_/ /_  / / /    build RELWITHDEBINFO
+[22971:track-selection]:    / __/ / /_/ / / /    _  /  / / / /_/ /     https://github.com/FairRootGroup/FairMQ
+[22971:track-selection]:   /_/    \__,_/_/_/     /_/  /_/  \___\_\     LGPL-3.0  © 2012-2025 GSI
+[22971:track-selection]: 
+[22971:track-selection]: [08:40:35][STATE] Starting FairMQ state machine --> IDLE
+[22963:internal-dpl-clock]: [INFO] Instrumenting crash signals
+[22965:internal-dpl-aod-spawner]: [08:40:35][STATE] INITIALIZED ---> BINDING
+[22971:track-selection]: [08:40:35][STATE] IDLE ---> INITIALIZING DEVICE
+[22971:track-selection]: [08:40:35][INFO] Table enabled: TrackSelection
+[22971:track-selection]: [08:40:35][INFO] Auto-disabling table: TrackSelectionExtension
+[22971:track-selection]: [08:40:35][INFO] setting up getGlobalTrackSelectionRun3ITSMatch(TrackSelection::GlobalTrackRun3ITSMatching::Run3ITSibAny, 0);
+[22971:track-selection]: [08:40:35][INFO] Track selection, set track type: 254
+[22971:track-selection]: [08:40:35][INFO] Track selection, set pt range: 0.1 - 1e+10
+[22971:track-selection]: [08:40:35][INFO] Track selection, set eta range: -0.8 - 0.8
+[22971:track-selection]: [08:40:35][INFO] Track selection, set require ITS refit: 1
+[22971:track-selection]: [08:40:35][INFO] Track selection, set require TPC refit: 1
+[22971:track-selection]: [08:40:35][INFO] Track selection, set require golden chi2: 1
+[22971:track-selection]: [08:40:35][INFO] Track selection, set min N crossed rows TPC: 70
+[22971:track-selection]: [08:40:35][INFO] Track selection, set min N crossed rows over findable clusters TPC: 0.8
+[22971:track-selection]: [08:40:35][INFO] Track selection, set max chi2 per cluster TPC: 4
+[22971:track-selection]: [08:40:35][INFO] Track selection, set require hits in ITS layers: 1
+[22971:track-selection]: [08:40:35][INFO] Track selection, set max chi2 per cluster ITS: 36
+[22971:track-selection]: [08:40:35][INFO] Track selection, set max DCA xy pt dep: 0.0455
+[22971:track-selection]: [08:40:35][INFO] Track selection, set max DCA z: 2
+[22971:track-selection]: [08:40:35][INFO] Track selection, set track type: 1
+[22971:track-selection]: [08:40:35][INFO] Track selection, set require hits in ITS layers: 1
+[22971:track-selection]: [08:40:35][INFO] Track selection, set pt range: 0.1 - 1e+10
+[22971:track-selection]: [08:40:35][INFO] Track selection, set eta range: -0.8 - 0.8
+[22971:track-selection]: [08:40:35][INFO] Track selection, set track type: 1
+[22971:track-selection]: [08:40:35][INFO] Track selection:
+[22971:track-selection]: [08:40:35][INFO] TrackType == 1
+[22971:track-selection]: [08:40:35][INFO] PtRange in [0.1, 1e+10]
+[22971:track-selection]: [08:40:35][INFO] EtaRange in [-0.8, 0.8]
+[22971:track-selection]: [08:40:35][INFO] TPCNCls > 0
+[22971:track-selection]: [08:40:35][INFO] TPCCrossedRows > 70
+[22971:track-selection]: [08:40:35][INFO] TPCCrossedRowsOverNCls > 0.8
+[22971:track-selection]: [08:40:35][INFO] TPCChi2NDF < 4
+[22971:track-selection]: [08:40:35][INFO] TPCRefit == 1
+[22971:track-selection]: [08:40:35][INFO] ITSNCls > 0
+[22971:track-selection]: [08:40:35][INFO] ITSChi2NDF < 36
+[22971:track-selection]: [08:40:35][INFO] ITSRefit == 1
+[22971:track-selection]: [08:40:35][INFO] ITSHits == 
+[22971:track-selection]: [08:40:35][INFO] GoldenChi2 == 1
+[22971:track-selection]: [08:40:35][INFO] DCAxy < 1e+10
+[22971:track-selection]: [08:40:35][INFO] DCAz < 2
+[22971:track-selection]: [08:40:35][INFO] TPCFracSharedCls < 1e+10
+[22971:track-selection]: [08:40:35][INFO] Track selection, set track type: 254
+[22971:track-selection]: [08:40:35][INFO] Track selection, set pt range: 0.1 - 1e+10
+[22971:track-selection]: [08:40:35][INFO] Track selection, set eta range: -0.8 - 0.8
+[22971:track-selection]: [08:40:35][INFO] Track selection, set require ITS refit: 1
+[22971:track-selection]: [08:40:35][INFO] Track selection, set require TPC refit: 1
+[22971:track-selection]: [08:40:35][INFO] Track selection, set require golden chi2: 1
+[22971:track-selection]: [08:40:35][INFO] Track selection, set min N crossed rows TPC: 70
+[22971:track-selection]: [08:40:35][INFO] Track selection, set min N crossed rows over findable clusters TPC: 0.8
+[22971:track-selection]: [08:40:35][INFO] Track selection, set max chi2 per cluster TPC: 4
+[22971:track-selection]: [08:40:35][INFO] Track selection, set require hits in ITS layers: 1
+[22971:track-selection]: [08:40:35][INFO] Track selection, set max chi2 per cluster ITS: 36
+[22971:track-selection]: [08:40:35][INFO] Track selection, set max DCA xy pt dep: 0.0455
+[22971:track-selection]: [08:40:35][INFO] Track selection, set max DCA z: 2
+[22971:track-selection]: [08:40:35][INFO] Track selection, set require no hits in ITS layers
+[22971:track-selection]: [08:40:35][INFO] Track selection, set require hits in ITS layers: 1
+[22971:track-selection]: [08:40:35][INFO] Track selection, set pt range: 0.1 - 1e+10
+[22971:track-selection]: [08:40:35][INFO] Track selection, set eta range: -0.8 - 0.8
+[22971:track-selection]: [08:40:35][INFO] Track selection, set track type: 254
+[22971:track-selection]: [08:40:35][INFO] Track selection, set pt range: 0.1 - 1e+10
+[22971:track-selection]: [08:40:35][INFO] Track selection, set eta range: -0.8 - 0.8
+[22971:track-selection]: [08:40:35][INFO] Track selection, set require ITS refit: 1
+[22971:track-selection]: [08:40:35][INFO] Track selection, set require TPC refit: 1
+[22971:track-selection]: [08:40:35][INFO] Track selection, set require golden chi2: 1
+[22971:track-selection]: [08:40:35][INFO] Track selection, set min N crossed rows TPC: 70
+[22971:track-selection]: [08:40:35][INFO] Track selection, set min N crossed rows over findable clusters TPC: 0.8
+[22971:track-selection]: [08:40:35][INFO] Track selection, set max chi2 per cluster TPC: 4
+[22971:track-selection]: [08:40:35][INFO] Track selection, set require hits in ITS layers: 1
+[22971:track-selection]: [08:40:35][INFO] Track selection, set max chi2 per cluster ITS: 36
+[22971:track-selection]: [08:40:35][INFO] Track selection, set max DCA xy pt dep: 0.0455
+[22971:track-selection]: [08:40:35][INFO] Track selection, set max DCA z: 2
+[22971:track-selection]: [08:40:35][INFO] Track selection, set track type: 1
+[22971:track-selection]: [08:40:35][INFO] Track selection, set require hits in ITS layers: 1
+[22971:track-selection]: [08:40:35][INFO] Track selection, set track type: 254
+[22971:track-selection]: [08:40:35][INFO] Track selection, set pt range: 0.1 - 1e+10
+[22971:track-selection]: [08:40:35][INFO] Track selection, set eta range: -0.8 - 0.8
+[22971:track-selection]: [08:40:35][INFO] Track selection, set require ITS refit: 1
+[22971:track-selection]: [08:40:35][INFO] Track selection, set require TPC refit: 1
+[22971:track-selection]: [08:40:35][INFO] Track selection, set require golden chi2: 1
+[22971:track-selection]: [08:40:35][INFO] Track selection, set min N crossed rows TPC: 70
+[22971:track-selection]: [08:40:35][INFO] Track selection, set min N crossed rows over findable clusters TPC: 0.8
+[22971:track-selection]: [08:40:35][INFO] Track selection, set max chi2 per cluster TPC: 4
+[22971:track-selection]: [08:40:35][INFO] Track selection, set require hits in ITS layers: 1
+[22971:track-selection]: [08:40:35][INFO] Track selection, set max chi2 per cluster ITS: 36
+[22971:track-selection]: [08:40:35][INFO] Track selection, set max DCA xy pt dep: 0.0455
+[22971:track-selection]: [08:40:35][INFO] Track selection, set max DCA z: 2
+[22971:track-selection]: [08:40:35][INFO] Track selection, set track type: 1
+[22971:track-selection]: [08:40:35][INFO] Track selection, set require hits in ITS layers: 2
+[22971:track-selection]: [08:40:35][INFO] Track selection, set track type: 1
+[22971:track-selection]: [08:40:35][INFO] Track selection, set pt range: 0.1 - 1e+10
+[22971:track-selection]: [08:40:35][INFO] Track selection, set eta range: -0.8 - 0.8
+[22971:track-selection]: [08:40:35][INFO] Track selection, set require ITS refit: 1
+[22971:track-selection]: [08:40:35][INFO] Track selection, set require TPC refit: 1
+[22971:track-selection]: [08:40:35][INFO] Track selection, set require golden chi2: 1
+[22971:track-selection]: [08:40:35][INFO] Track selection, set min N crossed rows TPC: 70
+[22971:track-selection]: [08:40:35][INFO] Track selection, set min N crossed rows over findable clusters TPC: 0.8
+[22971:track-selection]: [08:40:35][INFO] Track selection, set max chi2 per cluster TPC: 4
+[22971:track-selection]: [08:40:35][INFO] Track selection, set require hits in ITS layers: 1
+[22971:track-selection]: [08:40:35][INFO] Track selection, set max chi2 per cluster ITS: 36
+[22971:track-selection]: [08:40:35][INFO] Track selection, set max DCA z: 2
+[22971:track-selection]: [08:40:35][INFO] Track selection, set max DCA xy: 0.25
+[22971:track-selection]: [08:40:35][INFO] Track selection, set track type: 254
+[22971:track-selection]: [08:40:35][INFO] Track selection, set pt range: 0.1 - 1e+10
+[22971:track-selection]: [08:40:35][INFO] Track selection, set eta range: -0.8 - 0.8
+[22971:track-selection]: [08:40:35][INFO] Track selection, set require ITS refit: 1
+[22971:track-selection]: [08:40:35][INFO] Track selection, set require TPC refit: 1
+[22971:track-selection]: [08:40:35][INFO] Track selection, set require golden chi2: 1
+[22971:track-selection]: [08:40:35][INFO] Track selection, set min N crossed rows TPC: 70
+[22971:track-selection]: [08:40:35][INFO] Track selection, set min N crossed rows over findable clusters TPC: 0.8
+[22971:track-selection]: [08:40:35][INFO] Track selection, set max chi2 per cluster TPC: 4
+[22971:track-selection]: [08:40:35][INFO] Track selection, set require hits in ITS layers: 1
+[22971:track-selection]: [08:40:35][INFO] Track selection, set max chi2 per cluster ITS: 36
+[22971:track-selection]: [08:40:35][INFO] Track selection, set max DCA xy pt dep: 0.0455
+[22971:track-selection]: [08:40:35][INFO] Track selection, set max DCA z: 2
+[22971:track-selection]: [08:40:35][INFO] Track selection, set track type: 1
+[22971:track-selection]: [08:40:35][INFO] Track selection, set require hits in ITS layers: 2
+[22971:track-selection]: [08:40:35][INFO] setting up filtBit5 = getJEGlobalTrackSelectionRun2();
+[22971:track-selection]: [08:40:35][INFO] Track selection, set track type: 254
+[22971:track-selection]: [08:40:35][INFO] Track selection, set require ITS refit: 1
+[22971:track-selection]: [08:40:35][INFO] Track selection, set require TPC refit: 1
+[22971:track-selection]: [08:40:35][INFO] Track selection, set require golden chi2: 1
+[22971:track-selection]: [08:40:35][INFO] Track selection, set min N crossed rows TPC: 70
+[22971:track-selection]: [08:40:35][INFO] Track selection, set min N crossed rows over findable clusters TPC: 0.8
+[22971:track-selection]: [08:40:35][INFO] Track selection, set max chi2 per cluster TPC: 4
+[22971:track-selection]: [08:40:35][INFO] Track selection, set max chi2 per cluster ITS: 36
+[22971:track-selection]: [08:40:35][INFO] Track selection, set pt range: 0.15 - 1000
+[22971:track-selection]: [08:40:35][INFO] Track selection, set eta range: -0.9 - 0.9
+[22971:track-selection]: [08:40:35][INFO] Track selection, set max DCA xy pt dep: 1e+10
+[22971:track-selection]: [08:40:35][INFO] Track selection, set max DCA xy: 2.4
+[22971:track-selection]: [08:40:35][INFO] Track selection, set max DCA z: 3.2
+[22971:track-selection]: [08:40:35][INFO] Track selection, set require hits in ITS layers: 0
+[22971:track-selection]: [08:40:35][INFO] Track selection, set max fraction of shared clusters TPC: 0.4
+[22971:track-selection]: [08:40:35][STATE] INITIALIZING DEVICE ---> INITIALIZED
+[22971:track-selection]: [08:40:35][STATE] INITIALIZED ---> BINDING
+[22971:track-selection]: [08:40:35][ERROR] Failed binding socket track-selection.from_track-selection_to_track-to-collision-association[0].push, address: ipc:///var/folders/zz/zyxvpxvq6csfxvn_n0000000000000/T/localhost22961_22025, reason: Permission denied
+[22971:track-selection]: [08:40:35][ERROR] failed to attach channel from_track-selection_to_track-to-collision-association[0] (bind on ipc:///var/folders/zz/zyxvpxvq6csfxvn_n0000000000000/T/localhost22961_22025)
+[22971:track-selection]: [08:40:35][ERROR] Failed binding socket track-selection.from_track-selection_to_hf-track-index-skim-creator-tag-sel-tracks[0].push, address: ipc:///var/folders/zz/zyxvpxvq6csfxvn_n0000000000000/T/localhost22961_22026, reason: Permission denied
+[22971:track-selection]: [08:40:35][ERROR] failed to attach channel from_track-selection_to_hf-track-index-skim-creator-tag-sel-tracks[0] (bind on ipc:///var/folders/zz/zyxvpxvq6csfxvn_n0000000000000/T/localhost22961_22026)
+[22971:track-selection]: [08:40:35][ERROR] Failed binding socket track-selection.from_track-selection_to_internal-dpl-aod-writer[0].push, address: ipc:///var/folders/zz/zyxvpxvq6csfxvn_n0000000000000/T/localhost22961_22027, reason: Permission denied
+[22971:track-selection]: [08:40:35][ERROR] failed to attach channel from_track-selection_to_internal-dpl-aod-writer[0] (bind on ipc:///var/folders/zz/zyxvpxvq6csfxvn_n0000000000000/T/localhost22961_22027)
+[22972:lumi-task]: [INFO] Instrumenting crash signals
+[22971:track-selection]: [08:40:35][ERROR] 3 of the binding channels could not initialize. Initial configuration incomplete.
+[22965:internal-dpl-aod-spawner]: [08:40:35][ERROR] Failed binding socket internal-dpl-aod-spawner.from_internal-dpl-aod-spawner_to_event-selection-task[0].push, address: ipc:///var/folders/zz/zyxvpxvq6csfxvn_n0000000000000/T/localhost22961_22008, reason: Permission denied
+[22965:internal-dpl-aod-spawner]: [08:40:35][ERROR] failed to attach channel from_internal-dpl-aod-spawner_to_event-selection-task[0] (bind on ipc:///var/folders/zz/zyxvpxvq6csfxvn_n0000000000000/T/localhost22961_22008)
+[22970:event-selection-task]: [INFO] Spawing new device event-selection-task in process with pid 22970
+[22970:event-selection-task]: [08:40:35][INFO] 
+[22970:event-selection-task]:       ______      _    _______  _________ 
+[22970:event-selection-task]:      / ____/___ _(_)_______   |/  /_  __ \    version 1.10.0
+[22970:event-selection-task]:     / /_  / __ `/ / ___/__  /|_/ /_  / / /    build RELWITHDEBINFO
+[22970:event-selection-task]:    / __/ / /_/ / / /    _  /  / / / /_/ /     https://github.com/FairRootGroup/FairMQ
+[22970:event-selection-task]:   /_/    \__,_/_/_/     /_/  /_/  \___\_\     LGPL-3.0  © 2012-2025 GSI
+[22970:event-selection-task]: 
+[22970:event-selection-task]: [08:40:35][STATE] Starting FairMQ state machine --> IDLE
+[22970:event-selection-task]: [08:40:35][STATE] IDLE ---> INITIALIZING DEVICE
+[22965:internal-dpl-aod-spawner]: [08:40:35][ERROR] Failed binding socket internal-dpl-aod-spawner.from_internal-dpl-aod-spawner_to_track-propagation[0].push, address: ipc:///var/folders/zz/zyxvpxvq6csfxvn_n0000000000000/T/localhost22961_22007, reason: Permission denied
+[22965:internal-dpl-aod-spawner]: [08:40:35][ERROR] failed to attach channel from_internal-dpl-aod-spawner_to_track-propagation[0] (bind on ipc:///var/folders/zz/zyxvpxvq6csfxvn_n0000000000000/T/localhost22961_22007)
+[22965:internal-dpl-aod-spawner]: [08:40:35][ERROR] 2 of the binding channels could not initialize. Initial configuration incomplete.
+[22970:event-selection-task]: [08:40:35][INFO] Init CcdApi with UserAgentID: Karla-MacBook-Pro-3.local-1761201635-ZxNo2i, Host: http://alice-ccdb.cern.ch/, Curl timeouts: upload:20 download:5
+[22970:event-selection-task]: [08:40:35][INFO] Init CcdApi with UserAgentID: Karla-MacBook-Pro-3.local-1761201635-ZxNo2i, Host: http://alice-ccdb.cern.ch, Curl timeouts: upload:20 download:5
+[22970:event-selection-task]: [08:40:35][STATE] INITIALIZING DEVICE ---> INITIALIZED
+[22970:event-selection-task]: [08:40:35][STATE] INITIALIZED ---> BINDING
+[22970:event-selection-task]: [08:40:35][ERROR] Failed binding socket event-selection-task.from_event-selection-task_to_hf-candidate-creator-3prong[0].push, address: ipc:///var/folders/zz/zyxvpxvq6csfxvn_n0000000000000/T/localhost22961_22023, reason: Permission denied
+[22970:event-selection-task]: [08:40:35][ERROR] failed to attach channel from_event-selection-task_to_hf-candidate-creator-3prong[0] (bind on ipc:///var/folders/zz/zyxvpxvq6csfxvn_n0000000000000/T/localhost22961_22023)
+[22970:event-selection-task]: [08:40:35][ERROR] Failed binding socket event-selection-task.from_event-selection-task_to_hf-track-index-skim-creator-tag-sel-collisions[0].push, address: ipc:///var/folders/zz/zyxvpxvq6csfxvn_n0000000000000/T/localhost22961_22022, reason: Permission denied
+[22970:event-selection-task]: [08:40:35][ERROR] failed to attach channel from_event-selection-task_to_hf-track-index-skim-creator-tag-sel-collisions[0] (bind on ipc:///var/folders/zz/zyxvpxvq6csfxvn_n0000000000000/T/localhost22961_22022)
+[22970:event-selection-task]: [08:40:35][ERROR] Failed binding socket event-selection-task.from_event-selection-task_to_internal-dpl-aod-global-analysis-file-sink[0].push, address: ipc:///var/folders/zz/zyxvpxvq6csfxvn_n0000000000000/T/localhost22961_22024, reason: Permission denied
+[22970:event-selection-task]: [08:40:35][ERROR] failed to attach channel from_event-selection-task_to_internal-dpl-aod-global-analysis-file-sink[0] (bind on ipc:///var/folders/zz/zyxvpxvq6csfxvn_n0000000000000/T/localhost22961_22024)
+[22970:event-selection-task]: [08:40:35][ERROR] Failed binding socket event-selection-task.from_event-selection-task_to_lumi-task[0].push, address: ipc:///var/folders/zz/zyxvpxvq6csfxvn_n0000000000000/T/localhost22961_22021, reason: Permission denied
+[22970:event-selection-task]: [08:40:35][ERROR] failed to attach channel from_event-selection-task_to_lumi-task[0] (bind on ipc:///var/folders/zz/zyxvpxvq6csfxvn_n0000000000000/T/localhost22961_22021)
+[22970:event-selection-task]: [08:40:35][ERROR] Failed binding socket event-selection-task.from_event-selection-task_to_track-selection[0].push, address: ipc:///var/folders/zz/zyxvpxvq6csfxvn_n0000000000000/T/localhost22961_22020, reason: Permission denied
+[22970:event-selection-task]: [08:40:35][ERROR] failed to attach channel from_event-selection-task_to_track-selection[0] (bind on ipc:///var/folders/zz/zyxvpxvq6csfxvn_n0000000000000/T/localhost22961_22020)
+[22970:event-selection-task]: [08:40:35][ERROR] 5 of the binding channels could not initialize. Initial configuration incomplete.
+[22972:lumi-task]: [INFO] Spawing new device lumi-task in process with pid 22972
+[22972:lumi-task]: [08:40:35][INFO] 
+[22972:lumi-task]:       ______      _    _______  _________ 
+[22972:lumi-task]:      / ____/___ _(_)_______   |/  /_  __ \    version 1.10.0
+[22972:lumi-task]:     / /_  / __ `/ / ___/__  /|_/ /_  / / /    build RELWITHDEBINFO
+[22972:lumi-task]:    / __/ / /_/ / / /    _  /  / / / /_/ /     https://github.com/FairRootGroup/FairMQ
+[22972:lumi-task]:   /_/    \__,_/_/_/     /_/  /_/  \___\_\     LGPL-3.0  © 2012-2025 GSI
+[22972:lumi-task]: 
+[22972:lumi-task]: [08:40:35][STATE] Starting FairMQ state machine --> IDLE
+[22972:lumi-task]: [08:40:35][STATE] IDLE ---> INITIALIZING DEVICE
+[22972:lumi-task]: [08:40:35][INFO] Init CcdApi with UserAgentID: Karla-MacBook-Pro-3.local-1761201635-ZzPs6k, Host: http://alice-ccdb.cern.ch/, Curl timeouts: upload:20 download:5
+[22974:track-to-collision-association]: [INFO] Instrumenting crash signals
+[22969:bc-selection-task]: [INFO] Instrumenting crash signals
+[22963:internal-dpl-clock]: [INFO] Spawing new device internal-dpl-clock in process with pid 22963
+[22963:internal-dpl-clock]: [08:40:35][INFO] 
+[22963:internal-dpl-clock]:       ______      _    _______  _________ 
+[22963:internal-dpl-clock]:      / ____/___ _(_)_______   |/  /_  __ \    version 1.10.0
+[22963:internal-dpl-clock]:     / /_  / __ `/ / ___/__  /|_/ /_  / / /    build RELWITHDEBINFO
+[22963:internal-dpl-clock]:    / __/ / /_/ / / /    _  /  / / / /_/ /     https://github.com/FairRootGroup/FairMQ
+[22963:internal-dpl-clock]:   /_/    \__,_/_/_/     /_/  /_/  \___\_\     LGPL-3.0  © 2012-2025 GSI
+[22963:internal-dpl-clock]: 
+[22963:internal-dpl-clock]: [08:40:35][STATE] Starting FairMQ state machine --> IDLE
+[22963:internal-dpl-clock]: [08:40:35][STATE] IDLE ---> INITIALIZING DEVICE
+[22963:internal-dpl-clock]: [08:40:35][STATE] INITIALIZING DEVICE ---> INITIALIZED
+[22963:internal-dpl-clock]: [08:40:35][STATE] INITIALIZED ---> BINDING
+[22963:internal-dpl-clock]: [08:40:35][ERROR] Failed binding socket internal-dpl-clock.from_internal-dpl-clock_to_internal-dpl-aod-reader[0].push, address: ipc:///var/folders/zz/zyxvpxvq6csfxvn_n0000000000000/T/localhost22961_22000, reason: Permission denied
+[22963:internal-dpl-clock]: [08:40:35][ERROR] failed to attach channel from_internal-dpl-clock_to_internal-dpl-aod-reader[0] (bind on ipc:///var/folders/zz/zyxvpxvq6csfxvn_n0000000000000/T/localhost22961_22000)
+[22963:internal-dpl-clock]: [08:40:35][ERROR] 1 of the binding channels could not initialize. Initial configuration incomplete.
+[22974:track-to-collision-association]: [INFO] Spawing new device track-to-collision-association in process with pid 22974
+[22974:track-to-collision-association]: [08:40:35][INFO] 
+[22974:track-to-collision-association]:       ______      _    _______  _________ 
+[22974:track-to-collision-association]:      / ____/___ _(_)_______   |/  /_  __ \    version 1.10.0
+[22974:track-to-collision-association]:     / /_  / __ `/ / ___/__  /|_/ /_  / / /    build RELWITHDEBINFO
+[22974:track-to-collision-association]:    / __/ / /_/ / / /    _  /  / / / /_/ /     https://github.com/FairRootGroup/FairMQ
+[22974:track-to-collision-association]:   /_/    \__,_/_/_/     /_/  /_/  \___\_\     LGPL-3.0  © 2012-2025 GSI
+[22974:track-to-collision-association]: 
+[22974:track-to-collision-association]: [08:40:35][STATE] Starting FairMQ state machine --> IDLE
+[22974:track-to-collision-association]: [08:40:35][STATE] IDLE ---> INITIALIZING DEVICE
+[22974:track-to-collision-association]: [08:40:35][STATE] INITIALIZING DEVICE ---> INITIALIZED
+[22974:track-to-collision-association]: [08:40:35][STATE] INITIALIZED ---> BINDING
+[22974:track-to-collision-association]: [08:40:35][ERROR] Failed binding socket track-to-collision-association.from_track-to-collision-association_to_hf-track-index-skim-creator-tag-sel-tracks[0].push, address: ipc:///var/folders/zz/zyxvpxvq6csfxvn_n0000000000000/T/localhost22961_22034, reason: Permission denied
+[22974:track-to-collision-association]: [08:40:35][ERROR] failed to attach channel from_track-to-collision-association_to_hf-track-index-skim-creator-tag-sel-tracks[0] (bind on ipc:///var/folders/zz/zyxvpxvq6csfxvn_n0000000000000/T/localhost22961_22034)
+[22974:track-to-collision-association]: [08:40:35][ERROR] Failed binding socket track-to-collision-association.from_track-to-collision-association_to_internal-dpl-aod-writer[0].push, address: ipc:///var/folders/zz/zyxvpxvq6csfxvn_n0000000000000/T/localhost22961_22035, reason: Permission denied
+[22974:track-to-collision-association]: [08:40:35][ERROR] failed to attach channel from_track-to-collision-association_to_internal-dpl-aod-writer[0] (bind on ipc:///var/folders/zz/zyxvpxvq6csfxvn_n0000000000000/T/localhost22961_22035)
+[22974:track-to-collision-association]: [08:40:35][ERROR] 2 of the binding channels could not initialize. Initial configuration incomplete.
+[22969:bc-selection-task]: [INFO] Spawing new device bc-selection-task in process with pid 22969
+[22969:bc-selection-task]: [08:40:35][INFO] 
+[22969:bc-selection-task]:       ______      _    _______  _________ 
+[22969:bc-selection-task]:      / ____/___ _(_)_______   |/  /_  __ \    version 1.10.0
+[22969:bc-selection-task]:     / /_  / __ `/ / ___/__  /|_/ /_  / / /    build RELWITHDEBINFO
+[22969:bc-selection-task]:    / __/ / /_/ / / /    _  /  / / / /_/ /     https://github.com/FairRootGroup/FairMQ
+[22969:bc-selection-task]:   /_/    \__,_/_/_/     /_/  /_/  \___\_\     LGPL-3.0  © 2012-2025 GSI
+[22969:bc-selection-task]: 
+[22969:bc-selection-task]: [08:40:35][STATE] Starting FairMQ state machine --> IDLE
+[22969:bc-selection-task]: [08:40:35][STATE] IDLE ---> INITIALIZING DEVICE
+[22969:bc-selection-task]: [08:40:35][INFO] Init CcdApi with UserAgentID: Karla-MacBook-Pro-3.local-1761201635-ZvLp3h, Host: http://alice-ccdb.cern.ch/, Curl timeouts: upload:20 download:5
+[22969:bc-selection-task]: [08:40:35][INFO] Init CcdApi with UserAgentID: Karla-MacBook-Pro-3.local-1761201635-ZvLp3h, Host: http://alice-ccdb.cern.ch, Curl timeouts: upload:20 download:5
+[22969:bc-selection-task]: [08:40:35][STATE] INITIALIZING DEVICE ---> INITIALIZED
+[22969:bc-selection-task]: [08:40:35][STATE] INITIALIZED ---> BINDING
+[22969:bc-selection-task]: [08:40:35][ERROR] Failed binding socket bc-selection-task.from_bc-selection-task_to_event-selection-task[0].push, address: ipc:///var/folders/zz/zyxvpxvq6csfxvn_n0000000000000/T/localhost22961_22018, reason: Permission denied
+[22969:bc-selection-task]: [08:40:35][ERROR] failed to attach channel from_bc-selection-task_to_event-selection-task[0] (bind on ipc:///var/folders/zz/zyxvpxvq6csfxvn_n0000000000000/T/localhost22961_22018)
+[22969:bc-selection-task]: [08:40:35][ERROR] Failed binding socket bc-selection-task.from_bc-selection-task_to_internal-dpl-aod-global-analysis-file-sink[0].push, address: ipc:///var/folders/zz/zyxvpxvq6csfxvn_n0000000000000/T/localhost22961_22019, reason: Permission denied
+[22969:bc-selection-task]: [08:40:35][ERROR] failed to attach channel from_bc-selection-task_to_internal-dpl-aod-global-analysis-file-sink[0] (bind on ipc:///var/folders/zz/zyxvpxvq6csfxvn_n0000000000000/T/localhost22961_22019)
+[22969:bc-selection-task]: [08:40:35][ERROR] 2 of the binding channels could not initialize. Initial configuration incomplete.
+[22965:internal-dpl-aod-spawner]: [08:40:35][STATE] Exiting FairMQ state machine
+[22965:internal-dpl-aod-spawner]: [08:40:35][FATAL] error while setting up workflow in o2-analysis-hf-candidate-creator-3prong: 2 of the binding channels could not initialize. Initial configuration incomplete.
+[22968:track-propagation]: [08:40:35][STATE] Exiting FairMQ state machine
+[22965:internal-dpl-aod-spawner]: libc++abi: terminating due to uncaught exception of type o2::framework::RuntimeErrorRef
+[22965:internal-dpl-aod-spawner]: *** Program crashed (Abort trap: 6)
+[22965:internal-dpl-aod-spawner]: Backtrace by DPL:
+[22968:track-propagation]: [08:40:35][FATAL] error while setting up workflow in o2-analysis-track-propagation: 6 of the binding channels could not initialize. Initial configuration incomplete.
+[22968:track-propagation]: libc++abi: terminating due to uncaught exception of type o2::framework::RuntimeErrorRef
+[22968:track-propagation]: *** Program crashed (Abort trap: 6)
+[22968:track-propagation]: Backtrace by DPL:
+[22965:internal-dpl-aod-spawner]:     1   libsystem_platform.dylib            0x000000019da73584: _sigtramp
+[22965:internal-dpl-aod-spawner]:     2   libsystem_pthread.dylib             0x000000019da42bc8: pthread_kill
+[22965:internal-dpl-aod-spawner]:     3   libsystem_c.dylib                   0x000000019d94fa40: abort
+[22965:internal-dpl-aod-spawner]:     4   libc++abi.dylib                     0x000000019d9f9d08: __cxxabiv1::__aligned_malloc_with_fallback(unsigned long)
+[22965:internal-dpl-aod-spawner]:     5   libc++abi.dylib                     0x000000019d9e9fc0: demangling_terminate_handler()
+[22965:internal-dpl-aod-spawner]:     6   libobjc.A.dylib                     0x000000019d683c00: _objc_terminate()
+[22965:internal-dpl-aod-spawner]:     7   libc++abi.dylib                     0x000000019d9f90cc: std::__terminate(void (*)())
+[22965:internal-dpl-aod-spawner]:     8   libc++abi.dylib                     0x000000019d9fc348: __cxa_get_exception_ptr
+[22965:internal-dpl-aod-spawner]:     9   libc++abi.dylib                     0x000000019d9fc28c: __cxxabiv1::exception_cleanup_func(_Unwind_Reason_Code, _Unwind_Exception*)
+[22965:internal-dpl-aod-spawner]:     10  libO2Framework.dylib                0x00000001079500a0: std::__1::__function::__func<doChild(int, char**, o2::framework::ServiceRegistry&, o2::framework::RunningWorkflowInfo const&, o2::framework::RunningDeviceRef, o2::framework::DriverConfig const&, o2::framework::ProcessingPolicies, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char>> const&, uv_loop_s*)::$_0, std::__1::allocator<doChild(int, char**, o2::framework::ServiceRegistry&, o2::framework::RunningWorkflowInfo const&, o2::framework::RunningDeviceRef, o2::framework::DriverConfig const&, o2::framework::ProcessingPolicies, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char>> const&, uv_loop_s*)::$_0>, void ()>::operator()()
+[22965:internal-dpl-aod-spawner]:     11  libFairLogger.2.1.0.dylib           0x0000000106b0d5d0: fair::Logger::~Logger()
+[22965:internal-dpl-aod-spawner]:     12  libO2Framework.dylib                0x000000010792afe8: doUnknownException(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char>> const&, char const*)
+[22965:internal-dpl-aod-spawner]:     13  libO2Framework.dylib                0x000000010792aa1c: callMain(int, char**, int (*)(int, char**))
+[22965:internal-dpl-aod-spawner]:     14  o2-analysis-hf-candidate-creator-3p 0x000000010458ba5c: main
+[22965:internal-dpl-aod-spawner]:     15  dyld                                0x000000019d6b7154: start
+[22965:internal-dpl-aod-spawner]: Backtrace complete.
+[22968:track-propagation]:     1   libsystem_platform.dylib            0x000000019da73584: _sigtramp
+[22968:track-propagation]:     2   libsystem_pthread.dylib             0x000000019da42bc8: pthread_kill
+[22968:track-propagation]:     3   libsystem_c.dylib                   0x000000019d94fa40: abort
+[22968:track-propagation]:     4   libc++abi.dylib                     0x000000019d9f9d08: __cxxabiv1::__aligned_malloc_with_fallback(unsigned long)
+[22968:track-propagation]:     5   libc++abi.dylib                     0x000000019d9e9fc0: demangling_terminate_handler()
+[22968:track-propagation]:     6   libobjc.A.dylib                     0x000000019d683c00: _objc_terminate()
+[22968:track-propagation]:     7   libc++abi.dylib                     0x000000019d9f90cc: std::__terminate(void (*)())
+[22968:track-propagation]:     8   libc++abi.dylib                     0x000000019d9fc348: __cxa_get_exception_ptr
+[22968:track-propagation]:     9   libc++abi.dylib                     0x000000019d9fc28c: __cxxabiv1::exception_cleanup_func(_Unwind_Reason_Code, _Unwind_Exception*)
+[22968:track-propagation]:     10  libO2Framework.dylib                0x000000010783c0a0: std::__1::__function::__func<doChild(int, char**, o2::framework::ServiceRegistry&, o2::framework::RunningWorkflowInfo const&, o2::framework::RunningDeviceRef, o2::framework::DriverConfig const&, o2::framework::ProcessingPolicies, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char>> const&, uv_loop_s*)::$_0, std::__1::allocator<doChild(int, char**, o2::framework::ServiceRegistry&, o2::framework::RunningWorkflowInfo const&, o2::framework::RunningDeviceRef, o2::framework::DriverConfig const&, o2::framework::ProcessingPolicies, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char>> const&, uv_loop_s*)::$_0>, void ()>::operator()()
+[22968:track-propagation]:     11  libFairLogger.2.1.0.dylib           0x000000010680d5d0: fair::Logger::~Logger()
+[22968:track-propagation]:     12  libO2Framework.dylib                0x0000000107816fe8: doUnknownException(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char>> const&, char const*)
+[22968:track-propagation]:     13  libO2Framework.dylib                0x0000000107816a1c: callMain(int, char**, int (*)(int, char**))
+[22968:track-propagation]:     14  o2-analysis-track-propagation       0x00000001041c1560: main
+[22968:track-propagation]:     15  dyld                                0x000000019d6b7154: start
+[22968:track-propagation]: Backtrace complete.
+[ERROR] Workflow crashed - PID 22965 (internal-dpl-aod-spawner) did not exit correctly however it's not clear why. Exit code forced to 128.
+[INFO] Quit requested at Thu Oct 23 08:40:35 2025
+
+[ERROR] Workflow crashed - PID 22968 (track-propagation) did not exit correctly however it's not clear why. Exit code forced to 128.
+[ERROR] Unable to pass configuration to children
