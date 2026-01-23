@@ -29,26 +29,28 @@ DIR_THIS="$(dirname "$(realpath "$0")")"
 JSON="$DIR_THIS/dpl-config_applyMlSelection.json"
 
 # command line options of O2 workflows
-OPTIONS="-b --configuration json://$JSON --aod-memory-rate-limit 2000000000 --shm-segment-size 16000000000 --resources-monitoring 2"
+OPTIONS="-b --configuration json://$JSON --aod-memory-rate-limit 2000000000 --shm-segment-size 16000000000 --resources-monitoring 2 --min-failure-level error"
 
 # execute the mini task workflow and its dependencies
 # shellcheck disable=SC2086 # Ignore unquoted options.
-# o2-analysis-pid-tpc-base $OPTIONS | \
-# o2-analysis-timestamp $OPTIONS | \
-
-o2-analysis-pid-tpc-service $OPTIONS | \
-o2-analysis-tracks-extra-v002-converter $OPTIONS | \
-o2-analysis-pid-tof-full $OPTIONS | \
-o2-analysis-pid-tof-base $OPTIONS | \
-o2-analysis-hf-pid-creator $OPTIONS | \
 o2-analysistutorial-apply-ml-selection $OPTIONS | \
 o2-analysis-hf-candidate-creator-3prong $OPTIONS | \
 o2-analysis-hf-track-index-skim-creator $OPTIONS | \
 o2-analysis-track-to-collision-associator $OPTIONS | \
-o2-analysis-propagationservice $OPTIONS | \
-o2-analysis-event-selection-service $OPTIONS | \
-o2-analysis-trackselection $OPTIONS \
+o2-analysis-timestamp $OPTIONS | \
+o2-analysis-track-propagation $OPTIONS | \
+o2-analysis-trackselection $OPTIONS |\
+o2-analysis-event-selection $OPTIONS | \
+o2-analysis-pid-tof-merge $OPTIONS |\
+o2-analysis-pid-tpc $OPTIONS |\
+o2-analysis-multiplicity-table $OPTIONS |\
+o2-analysis-ft0-corrected-table $OPTIONS |\
+o2-analysis-mccollision-converter $OPTIONS |\
+o2-analysis-pid-tpc-base $OPTIONS |\
+o2-analysis-hf-pid-creator $OPTIONS |\
+o2-analysis-tracks-extra-v002-converter $OPTIONS \
 > "$LOGFILE" 2>&1
+
 
 # report status
 rc=$?
@@ -59,3 +61,4 @@ else
   echo "Check the log file $LOGFILE"
   exit $rc
 fi
+
